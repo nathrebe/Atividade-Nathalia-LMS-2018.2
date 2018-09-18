@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu{
+            background-color: rgb(90, 180, 55);
+            overflow: hidden;
+            font-family: Gill Sans, sans-serif;
+            font-size: 18px;
+            color: white;
+        }
+        .menu ul{
+            list-style-type: none;
+        }
+        .menu ul li a{
+            text-decoration: none;
+            color: black;
+            display: block;
+            float: left;
+            padding: 10px;
+        }
+        .menu ul li a:hover, .dropdown .dropdown-button:hover, .dropdown:hover .dropdown-button{
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+        .dropdown{
+            float: left;
+        }
+        .dropdown .dropdown-button{
+            padding: 20px;
+            cursor: pointer;
+        }
+        .dropdown .dropdown-content{
+            position: absolute;
+            background-color: rgb(228, 228, 228);
+            display: none;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        .menu-lateral{
+            background-color: rgb(255, 255, 255);
+            position:static,fixed;
+            font-family: Gill Sans, sans-serif;
+            left: 5px;
+            height: 100%;
+            width: 17%;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 2px;
+            border-style: none solid none none;
+            border-width: none 2px none none;
+            border-color: white rgb(185, 170, 170) white white;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/W3Schools_logo.png" width="250" height="40"/>
+    </header>
+    <div class="titulo"></div>
+    <nav class="menu">
+        <ul>
+            <li>
+                <div class="dropdown">
+                        <div class="dropdown-button">
+                            TUTORIALS
+                        </div>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="">Learn HTML</a></li> 
+                                <li><a href="">Learn CSS</a></li>
+                                <li><a href="">Learn Colors</a></li>
+                                <li><a href="">Learn Icons</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <div class="dropdown-button">
+                        REFERENCES
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="">HTML</a></li> 
+                            <li><a href="">CSS</a></li>
+                            <li><a href="">JAVA</a></li>
+                            <li><a href="">XML</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                        <div class="dropdown-button">
+                            EXAMPLES
+                        </div>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href="">HTML example</a></li> 
+                                <li><a href="">CSS example</a></li>
+                                <li><a href="">JAVA example</a></li>
+                                <li><a href="">XML example</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </li>
+        </ul>
+    </nav>
+</nav>
+<nav class="menu-lateral">
+        <h3>HTML and CSS</h3> <br>
+            <p>
+                Learn HTML <br>
+                Learn CSS <br>
+                Learn W3.CSS <br>
+                Learn Colors <br>
+                Learn bootstraps <br>
+                Learn Icons <br>
+                Learn Graphics <br>
+                Learn how to <br> <br>
+            </p>
+        <h3>JavaScript </h3> <br>
+            <p>
+                Learn JavaScript <br>
+                Learn jQuery <br>
+                Learn Angular JS <br>
+                Learn JSON <br>
+                Learn AJAX <br>
+                Learn W3.js <br><br>
+            </p>
+        <h3>Server Side</h3> <br>
+        <p>
+            Learn SQL <br>
+            Learn PHP <br>
+            Learn Python <br>
+            Learn ASP <br>
+            Learn Node.js <br>
+            Learn Raspberry <br><br>
+        </p>
+       <h3> Web Building</h3> <br>
+       <p>
+            Learn Templates <br>
+            Learn Statistics <br>
+            Learn Certificates <br>
+            Learn Editor <br><br>
+        </p>
+       <h3> XML Tutorials</h3> <br>  
+       <p>
+            Learn XML <br>
+            Learn XML AJAX <br>
+            Learn XML DOM <br>
+            Learn XML DTD <br>
+            Learn XML Schema <br>
+            Learn XSLT <br>
+            Learn XPath <br>
+            Learn XQuery <br> <br>
+        </p>
+       <h3> References </h3> <br>
+       <p>
+            HTML References <br>
+            CSS References <br>
+            JS References <br>
+            SQL References <br>
+            PHP References <br>
+            jQuery References <br>
+            Python References <br>
+            UTF-8 References <br> <br>
+        </p>
+</nav>
+</body>
+</html>
