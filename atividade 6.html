@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .body{
+        background-color: rgba(216, 112, 148, 0.781);
+    }
+    .titulo{
+        background-color: palevioletred;
+        font-size: 30px;
+        height: 40px;
+        width: 100%;
+        font-family:Courier New, Courier, monospace;
+        padding: 15px; 
+        
+    }
+    .menu1{
+        overflow: hidden;
+    }
+    .lateral{
+        background-color: darkturquoise;
+        float: left;
+        width: 25%;
+        height: 100%;
+        position: absolute;
+        padding: 0px;
+    }
+    .lateral ul{
+        list-style-type: none;
+    }
+    .lateral ul li a{
+        font-family: Courier New, Courier, monospace;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+        padding: 0px;
+        display: block;
+        text-align: center;
+        
+    }
+    .lateral ul li a:hover{
+        background-color: darkcyan;
+    }
+    .accordion {
+        background-color: cyan;
+        color:black;
+        font-family: Courier New, Courier, monospace;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        border: none;
+        outline: none;
+    }
+        .active, .accordion:hover {
+            background-color: darkcyan;
+        }
+        .menuA {
+            padding: 0px;
+            background-color: pink;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s ease-out;
+            text-align: center;
+        }
+    @media screen and (max-width: 478px){
+            .lateral{
+                float: none;
+                width: 100%;
+                height: auto;
+            }
+            .lateral ul li a{
+                float: left;
+            }
+            .arco{
+                float: none;
+                width: auto;
+            }
+        }
+     
+</style>
+
+</head>
+<body class="body">
+    <header class="titulo">
+        Titulo
+    </header>
+    <div class="menu1">
+        <nav class="lateral">
+            <ul>
+                <li><a href="">primeiro</a></li>
+                <li><a href="">segundo</a></li>
+                <li><a href="">terceiro</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="arco">
+            <button class="accordion">Section 1</button>
+            <div class="menuA">
+              <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e5d1b464844871.5adfaad1820b8.png" alt="">
+            </div>
+            
+            <button class="accordion">Section 2</button>
+            <div class="menuA">
+              <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/86501b64844871.5adfaad181b1f.png" alt="">
+            </div>
+            
+            <button class="accordion">Section 3</button>
+            <div class="menuA">
+              <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/31e0d764844871.5adfaad182520.png" alt="">
+            </div>
+            </div>
+    
+            <script>
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+    
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var menuA = this.nextElementSibling;
+                        if (menuA.style.display === "block") {
+                            menuA.style.display = "none";
+                        } else {
+                            menuA.style.display = "block";
+                        }
+                    });
+                }
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+    
+                for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var menuA = this.nextElementSibling;
+                    if (menuA.style.maxHeight){
+                    menuA.style.maxHeight = null;
+                    } else {
+                    menuA.style.maxHeight = menuA.scrollHeight + "px";
+                    } 
+                });
+                }
+            </script>
+</body>
+
+</html>
