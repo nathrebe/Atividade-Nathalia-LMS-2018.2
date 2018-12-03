@@ -1,0 +1,161 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+/*-----------------------Cabeçario--------------------------------------------------------------*/
+
+    .tit{
+        background-color: rgb(61, 145, 255);
+        margin: 2px;
+        border-radius: 15px; 
+        width: 100%;
+    }
+
+    .titulo{
+        color: white;
+        padding: 15px;
+        font-size: 35px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-stretch:ultra-condensed;
+        -webkit-text-stroke-width: 2px ;
+        -webkit-text-stroke-color: rgb(73, 73, 255)
+        
+    }
+
+    .titulo img{
+        float: right; 
+        padding-bottom: 50%;
+        margin-top: 1px;        
+    }
+
+    /* -----menu-Drop---------------------------------------------------------------------*/
+
+    .menu{
+        background-color:rgb(248, 93, 93);
+        border-radius:  0 0 15px 15px; 
+       
+    }
+  
+    .dropdown-menu{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;   
+          
+    }
+
+    
+    /* -----corpo---------------------------------------------------------------------*/
+
+    .corpo{
+        background-color: rgb(230, 230, 230);
+        
+    }
+    .conteiner{
+        display: flex;
+        flex-wrap: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    .card-produto{
+        height: 320px;
+        width: 220px;
+        background: rgb(248, 93, 93);
+        text-align: center;
+        display: inline-block;
+        margin: 10px;
+        border-radius: 20px 20px 10px 10px;
+        padding: 1px;
+        
+    }
+
+    .card-produto .titulo-produto{
+        background: rgb(255, 130, 130);;
+        border-radius: 20px 20px 0 0;
+        font-size: 20px;
+        color:whitesmoke;
+        
+    }
+    .card-produto .img{
+        margin: 10px;
+        background: rgb(255, 130, 130);
+        border-radius: 5px;
+    }
+    .card-produto .body-produto{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+  
+  /*---------compra----------------------------------------------------------------------*/
+
+    .compra{
+        background-color: rgb(248, 93, 93);
+        widows: 100px;
+        height: 350px;
+        border-radius: 20px;
+        margin-top: 40px;
+    }
+
+    .produtos{
+        color:white;       
+        align-items: center;
+        
+    }
+
+    .produtos2{
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        margin-left: 400px;
+        margin-top: 50px;
+        font-size: 20px;  
+        background-color: rgb(255, 143, 143);
+        width: 40%;
+        height: 250px;
+        border-radius: 20px;
+        border-style:dotted; 
+        border-color: rgb(61, 145, 255);
+        border-width: 5px;
+    }
+
+    
+    
+  /* ------------------------footer----------------------- */
+    
+  .conteudo-F{
+    display: flex;
+    flex-wrap: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    
+  }
+
+.pe{
+    background-color: rgb(248, 93, 93);
+    border-radius: 20px 20px 0 0;
+    height: 220px;
+    margin-top: 50px;
+    
+}
+.pe-blue{
+    height:20px; 
+    background-color: rgb(61, 145, 255);
+
+}
+
+
+  .audio{
+    background-color: rgb(248, 93, 93);
+  }
+
+  .imgP{
+      
+      margin-right: -10px;
+  }
+
+

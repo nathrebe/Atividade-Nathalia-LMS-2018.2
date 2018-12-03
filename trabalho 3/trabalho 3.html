@@ -1,0 +1,212 @@
+<html>
+        <head>
+            <meta charset = "UTF-8">
+            <title> pokemart</title>
+        
+            <link rel="stylesheet" href="Trabalho3-css.css">
+            <link rel="stylesheet" href="trabalho3.js">
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+                
+
+        </head>
+        <header class="tit">
+                <div class="titP">
+                    <p class="titulo">
+                        <a href="trabalho 3.html" class="titulo">POKÉMART</a>
+                       
+                    </p>      
+                </div>
+        
+            <!-- dropdown  -->
+            <ul id="dropdown1" class="dropdown-content" style='padding: 30px;color:black;background-color:rgba(123, 240, 255, 0.541);margin:10px;'> <span id = "cart" >
+               
+                <button class="btn waves-effect waves-light" type="submit"  style = " background-color:rgb(255, 130, 130); margin:4px;color:whitesmoke; border-radius: 20px;"> BUY 
+                    </button>
+            </span></ul>
+            <nav>
+                <div class="nav-wrapper " style = "padding: 0 150px ;;background-color: rgb(255, 104, 104);">
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="dropdown-button" href="#!" data-activates="dropdown1"> BAG
+                            <i class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+
+                     <button class="btn waves-effect waves-light" type="submit" onclick="window.location = 'pagina2.html'" style = " background-color:rgb(102, 149, 252);margin-top:14px;color:whitesmoke; border-radius: 20px;"> Login 
+                        </button>
+                    
+                </div>
+            </nav>
+
+    </header>
+        
+<!-- produtos -->
+
+    <body class="corpo">
+        <div class="conteiner">
+            <div class="card-produto">
+                    <div class="titulo-produto">
+                          <b>  Pokeball  </b><br>
+                            <span style="font-size:15px; color:whitesmoke;">200 Pokémon Dollar</span>
+                    </div>
+                    <div class="img">
+                            <img src="pokebola.png">
+                    </div>
+                    <div class="body-produto">
+                    aaa
+                        <form style= "display: flex ; justify-content: space-between; flex-wrap: wrap;">
+                                <input type="number" class = "qntd" placeholder="Qtd:" style = "width: 80%; margin-top: -20px; margin-left:20px; margin-bottom:10px;border-radius: 10px;background:rgb(255, 179, 179); color:black;"> 
+                                    <button class="btn waves-effect waves-light" type="submit" name="action" value = "item1" style = "width: 100%; margin-top: 13px; background-color:rgb(255, 130, 130); margin:4px;color:whitesmoke;">
+                                       Add to the bag
+                                    </button>
+                        </form>
+                        
+                    </div>       
+            </div>
+            
+                    <div class="card-produto">
+                            <div class="titulo-produto">
+                                   <b> Greatball </b><br>
+                                    <span style="font-size:15px; color:whitesmoke;"> 300 Pokémon Dollar</span>
+                            </div>
+                            <div class="img">
+                                    <img src="greatball.png">
+                            </div>
+                            <div class="body-produto">
+                                    Pokémon Dollar 300 <br>
+                               
+                                <form style= "display: flex ; justify-content: space-between; flex-wrap: wrap;">
+                                        <input type="number" class = "qntd" placeholder="Qtd:" style = "width: 80%; margin-top: -20px; margin-left:20px; margin-bottom:10px;border-radius: 10px;background:rgb(255, 179, 179); color:black;"> 
+                                                <button class="btn waves-effect waves-light" type="submit" name="action" value = "item2" style = "width: 100%; margin-top: 13px; background-color:rgb(255, 130, 130); margin:4px;color:whitesmoke;">
+                                                   Add to the bag
+                                                </button>
+                                    </form>
+        
+                            </div>
+                    </div>
+                
+        
+                        <div class="card-produto">
+                                <div class="titulo-produto">
+                                       <b> Ultraball </b><br>
+                                        <span style="font-size:15px; color:whitesmoke;"> 1200 Pokémon Dollar</span>
+                                </div>
+                                <div class="img">
+                                        <img src="ultraball.png">
+                                </div>
+                                <div class="body-produto">
+                                        aaa
+                                    <form style= "display: flex ; justify-content: space-between; flex-wrap: wrap;">
+                                            <input type="number" class = "qntd" placeholder="Qtd:" style = "width: 80%; margin-top: -20px; margin-left:20px; margin-bottom:10px;border-radius: 10px;background:rgb(255, 179, 179); color:black;"> 
+                                                    <button class="btn waves-effect waves-light" type="submit" name="action" value = "item3" style = "width: 100%; margin-top: 13px; background-color:rgb(255, 130, 130); margin:4px;color:whitesmoke;">
+                                                       Add to the bag
+                                                    </button>
+                                        </form>
+        
+                                </div>
+                        </div>
+        
+                       
+            <div class="card-produto">
+                        <div class="titulo-produto">
+                              <b>  Masterball  </b><br> 
+                                <span style="font-size:15px; color:whitesmoke;">1000000 Pokémon Dollar </span> 
+                        </div>
+                        <div class="img">
+                                <img src="masterball.png">
+                        </div>
+                        <div class="body-produto">
+                            aaa
+                            <form style= "display: flex ; justify-content: space-between; flex-wrap: wrap;">
+                                <input type="number" class = "qntd" placeholder="Qtd:" style = "width: 80%; margin-top: -20px; margin-left:20px; margin-bottom:10px;border-radius: 10px;background:rgb(255, 179, 179); color:black;"> 
+                                        <button class="btn waves-effect waves-light" type="submit" name="action" value = "item4" style = "width: 100%; margin-top: 13px; background-color:rgb(255, 130, 130); margin:4px;color:whitesmoke;">
+                                           Add to the bag
+                                        </button>
+                            </form>
+                            
+                           
+                        </div>
+                
+            </div>           
+           
+        </div>
+ <!-- foot -->
+
+        <footer>
+                <div class="pe">
+                    <div class="conteudo-F">
+                            <div class="imgP">
+                                <img src="pikachu1.gif"  width="250px" height="250px">
+                            </div>   
+                            <p style="font-size:20px; color:whitesmoke;">
+                            Pokemart theme:
+                            </p>
+                            <div class="audio">
+                                <audio controls>
+                                    <source src="pokemart.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                    </div>
+                </div>
+                
+                <div class="pe-blue"></div>
+                </footer>
+        <script>
+            let cart = [];
+            let item1 = {
+                name: "Pokeball",
+                price: 200,
+                qntd: "0"
+            };
+            let item2 = {
+                name: "GreatBall",
+                price: 300,
+                qntd: "0"
+            };
+            let item3 = {
+                name: "Ultraball",
+                price: 1200,
+                qntd: "0"
+            };
+            let item4 = {
+                name: "Masterball",
+                price: 1000000,
+                qntd: "0"
+            };
+
+                $("button").click(function() {
+                    event.preventDefault();
+                    var li = $(this).parent();
+                    var quantity = $(li).find('input[type=number]').val();
+                    eval($(this).val()).qntd = quantity;
+                    cart.push(eval($(this).val()));
+                    localStorage.setItem(cart, JSON.stringify(cart));
+                    console.log("preço:" + JSON.parse((localStorage.getItem(cart))));
+                    $('#cart').prepend('<p> Item:' + eval($(this).val()).name + '<br> Preço: R$ ' + eval($(this).val()).price + '<br> Quantidade: ' + eval($(this).val()).qntd + '</p> <hr>');
+                });
+
+                $.ajax({
+                    type: 'GET',
+                    url: 'http://rest.learncode.academy/api/learncode/1/',
+                    success: function(data) {
+                    }
+                });
+
+                $('.dropdown-button').dropdown({
+                    inDuration: 300,
+                    outDuration: 225,
+                    constrainWidth: false, 
+                    hover: true, 
+                    gutter: 0, 
+                    belowOrigin: true, 
+                    alignment: 'left', 
+                    stopPropagation: false 
+                }
+);
+
+        </script>
+
+        </body>
+        </html>
